@@ -2,7 +2,15 @@
 
 var generatePassword = function(){
   var lengthMin = prompt("What is the minimum length of the password?");
+  while(lengthMin < 8){
+    alert("Password must be at least 8 characters");
+    var lengthMin = prompt("What is the minimum length of the password?");
+  }
   var lengthMax = prompt("What is the maximum length of the password?");;
+  while(lengthMax > 128){
+    alert("Password must be less than 128 characters");
+    var lengthMax = prompt("What is the maximum length of the password?");;
+  }
   var characterTypes = {
     lowercase: confirm("Do you want lowercase?"),
     uppercase: confirm("Do you want uppercase?"),
