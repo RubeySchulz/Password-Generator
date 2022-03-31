@@ -1,6 +1,6 @@
-##password-generator
+## password-generator
 
-#week 3 challenge
+# week 3 challenge
 
 using javascript and prewritten HTML and CSS, I made a password generator that asks you if you want
 -lowercase
